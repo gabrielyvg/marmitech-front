@@ -54,8 +54,10 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.box}>
-          <h1>{titulo}</h1>
-          <h4>{subtitulo}</h4>
+          <div>
+            <h1>{titulo}</h1>
+            <span className={styles.subtitulo}>{subtitulo}</span>
+          </div>
           <div className={styles.containerElements}>
             <form onSubmit={onSubmit}>
               <input onChange={handleChange} type="text"
